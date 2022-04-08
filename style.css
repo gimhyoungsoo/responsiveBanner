@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+.display_none {
+  display: none;
+}
+
 /* navbar------------------------------------------------------ */
 .navbar {
   display: flex;
