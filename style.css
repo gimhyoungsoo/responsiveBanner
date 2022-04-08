@@ -17,10 +17,6 @@ a {
   text-decoration: none;
 }
 
-.display_none {
-  display: none;
-}
-
 /* navbar------------------------------------------------------ */
 .navbar {
   display: flex;
@@ -68,7 +64,20 @@ a {
   padding: 8px 12px;
 }
 
+.navbar_burgerMenu {
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+  display: none;
+}
+
+
 @media screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -88,5 +97,9 @@ a {
   .navbar_icons {
       justify-content: center;
       width: 100%;
+  }
+
+  .navbar_burgerMenu {
+    display: block;
   }
 }
